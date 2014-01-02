@@ -45,6 +45,8 @@
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
   <project path="device/moto/wingray" name="android_device_moto_wingray" remote="schischu" revision="android-4.4" />
+  <project path="device/moto/stingray" name="android_device_moto_stingray" remote="schischu" revision="android-4.4" />
+  <project path="device/moto/everest" name="android_device_moto_everest" remote="schischu" revision="android-4.4" />
   <!--project path="device/moto/stingray-kernel" name="android_kernel_moto_wingray" remote="schischu" revision="jb-mr2" /-->
   <project path="device/moto/stingray-kernel" name="xoom-ElementalX" remote="schischu" revision="master" />
   <project path="device/sample" name="device/sample" groups="pdk" />
@@ -291,7 +293,7 @@
   <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="omnirom" revision="android-4.4" />
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" />
-  <project path="hardware/ril" name="android_hardware_ril" remote="omnirom" revision="android-4.4" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="schischu" revision="android-4.4" />
   <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" groups="exynos5" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
   <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="omnirom" revision="android-4.4" />
@@ -420,7 +422,9 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="vendor/broadcom/wingray" name="android_vendor_broadcom_wingray" remote="schischu" revision="android-4.3" />
-  <project path="vendor/moto/stingray" name="android_vendor_moto_wingray" remote="schischu" revision="android-4.3" />
+  <project path="vendor/moto/wingray" name="android_vendor_moto_wingray" remote="schischu" revision="android-4.3" />
+  <project path="vendor/moto/stingray" name="android_vendor_moto_stingray" remote="schischu" revision="android-4.3" />
+  <project path="vendor/moto/everest" name="android_vendor_moto_everest" remote="schischu" revision="android-4.3" />
   <project path="vendor/nvidia/wingray" name="android_vendor_nvidia_wingray" remote="schischu" revision="android-4.3" />
   <project path="vendor/omni" name="android_vendor_omni" remote="schischu" revision="android-4.4" />
   <project path="packages/apps/MonthCalendarWidget" name="android_packages_apps_MonthCalendarWidget" remote="omnirom" revision="android-4.4" />
