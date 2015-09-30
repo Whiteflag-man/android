@@ -27,7 +27,7 @@
            review="gerrit.omnirom.org"
            fetch="https://github.com/koush" />
 
-  <default revision="refs/tags/android-5.1.1_r2"
+  <default revision="refs/tags/android-5.1.1_r12"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
@@ -39,8 +39,8 @@
   <project path="android" name="android" remote="omnirom" revision="android-5.1" />
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="android_art" remote="omnirom" revision="android-5.1" groups="pdk" />
+  <project path="org/bionic" name="android_bionic" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="bionic" name="android_bionic" remote="aaccount" revision="android-5.1" groups="pdk" />
-  <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs"/>
   <project path="dalvik" name="android_dalvik" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs" />
   <project path="developers/build" name="platform/developers/build" />
@@ -50,20 +50,15 @@
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
-  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="device/sample" name="device/sample" groups="pdk" />
-  
-  <project path="device/samsung/i9300" name="android_device_samsung_i9300" remote="aaccount" revision="n-2.0" groups="pdk" />
-  
-  <project path="device/samsung/p4" name="android_device_samsung_p4" remote="aaccount" revision="master" groups="pdk" />
-  <project path="device/samsung/p4-common" name="android_device_samsung_p4-common" remote="aaccount" revision="omni50" groups="pdk" />
-  
-  <project path="device/samsung/p4tmo" name="android_device_samsung_p4tmo" remote="aaccount" revision="master" groups="pdk" />
-  <project path="device/samsung/p4wifi" name="android_device_samsung_p4wifi" remote="aaccount" revision="master" groups="pdk" />
-  
-  <project path="kernel/samsung/p4" name="android_kernel_samsung_p4" remote="aaccount" revision="master" groups="pdk" />
-  
-  <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
+
+  <project path="device/moto/wingray" name="android_device_moto_wingray" remote="schischu" revision="android-4.4" />
+  <project path="device/moto/stingray" name="android_device_moto_stingray" remote="schischu" revision="android-4.4" />
+  <project path="device/moto/stingray_cdma" name="android_device_moto_stingray_cdma" remote="schischu" revision="android-4.4" />
+  <project path="device/moto/everest" name="android_device_moto_everest" remote="schischu" revision="android-4.4" />
+
+  <project path="kernel/moto/stingray-kernel" name="xoom-ElementalX" remote="schischu" revision="master" />
+
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
   <project path="external/ant-glob" name="platform/external/ant-glob" groups="pdk-cw-fs" />
@@ -209,7 +204,7 @@
   <project path="external/libvorbis" name="platform/external/libvorbis" groups="pdk-cw-fs" />
   <project path="external/libvpx" name="platform/external/libvpx" groups="pdk" />
   <project path="external/libvterm" name="platform/external/libvterm" groups="pdk-cw-fs" />
-  <project path="external/libxml2" name="platform/external/libxml2" groups="pdk-cw-fs" />
+  <project path="external/libxml2" name="android_external_libxml2" remote="omnirom" revision="android-5.1" />
   <project path="external/libyuv" name="platform/external/libyuv" groups="libyuv,pdk-cw-fs" />
   <project path="external/linux-tools-perf" name="platform/external/linux-tools-perf" groups="pdk-cw-fs" />
   <project path="external/littlemock" name="platform/external/littlemock" groups="pdk-cw-fs" />
@@ -293,7 +288,9 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
+  <project path="org/frameworks/av" name="android_frameworks_av" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="frameworks/av" name="android_frameworks_av" remote="aaccount" revision="android-5.1" groups="pdk" />
+  <project path="org/frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs" />
   <project path="frameworks/base" name="android_frameworks_base" remote="aaccount" revision="android-5.1" groups="pdk-cw-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
@@ -303,6 +300,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" />
+  <project path="org/frameworks/native" name="android_frameworks_native" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="frameworks/native" name="android_frameworks_native" remote="aaccount" revision="android-5.1" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs" />
@@ -315,7 +313,7 @@
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" groups="pdk-cw-fs" />
   <project path="frameworks/opt/mms" name="android_frameworks_opt_mms" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs" />
   <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs" />
-  <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs" />
+  <project path="frameworks/opt/net/voip" name="android_frameworks_opt_net_voip" remote="omnirom" revision="android-5.1" />
   <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="omnirom" revision="android-5.1" />
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs" />
@@ -328,17 +326,18 @@
   <project path="frameworks/support" name="android_frameworks_support" remote="omnirom" revision="android-5.1" />
   <project path="frameworks/volley" name="platform/frameworks/volley" groups="pdk-cw-fs" />
   <project path="frameworks/webview" name="android_frameworks_webview" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs" />
-  <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs" />
+  <project path="frameworks/wilhelm" name="android_frameworks_wilhelm" remote="omnirom" revision="android-5.1" />
   <project path="hardware/akm" name="platform/hardware/akm" />
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="omnirom" revision="android-5.1" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
+  <project path="org/hardware/libhardware" name="android_hardware_libhardware" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="aaccount" revision="android-5.1" groups="pdk" />
+  <project path="org/hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="aaccount" revision="android-5.1" groups="pdk" />
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
   <project path="hardware/nvidia/tegra124" name="platform/hardware/nvidia/tegra124" groups="tegra124" />
   <project path="hardware/ril" name="android_hardware_ril" remote="omnirom" revision="android-5.1" />
-  <project path="hardware/samsung" name="android_hardware_samsung" remote="aaccount" revision="n-2.0" />
   <project path="libcore" name="android_libcore" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" />
@@ -406,7 +405,7 @@
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" />
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" />
   <project path="packages/services/Mms" name="platform/packages/services/Mms" />
-  <project path="packages/services/Telecomm" name="platform/packages/services/Telecomm" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="omnirom" revision="android-5.1" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="omnirom" revision="android-5.1" />
   <project path="packages/wallpapers/Basic" name="android_packages_wallpapers_Basic" remote="omnirom" revision="android-5.1" />
   <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" />
@@ -429,7 +428,6 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" groups="pdk,linux" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
   <project path="prebuilts/gradle-plugin" name="platform/prebuilts/gradle-plugin" groups="pdk-cw-fs" />
   <project path="prebuilts/libs/libedit" name="platform/prebuilts/libs/libedit" groups="pdk-cw-fs" />
   <project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" groups="pdk-cw-fs" />
@@ -440,6 +438,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
+  <project path="org/system/core" name="android_system_core" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="system/core" name="android_system_core" remote="schischu" revision="android-5.1" groups="pdk" />
   <project path="system/extras" name="android_system_extras" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
@@ -459,12 +458,12 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
   <project path="vendor/omni" name="android_vendor_omni" remote="omnirom" revision="android-5.1" />
   <project path="packages/apps/MonthCalendarWidget" name="android_packages_apps_MonthCalendarWidget" remote="omnirom" revision="android-5.1" />
-  
-  <!--project path="external/koush/Superuser" name="Superuser" remote="koush" -->
-  <!--project path="external/koush/Widgets" name="Widgets" remote="koush" revision="native" -->
-  
-  <project path="vendor/samsung/p4" name="p4_blobs" remote="aaccount" revision="omni50" />
-  <project path="vendor/samsung/p4wifi" name="p4wifi_blobs" remote="aaccount" revision="omni50" />
-  <project path="vendor/samsung/p4tmo" name="android_vendor_samsung_p4tmo" remote="aaccount" revision="omni50" />
+
+  <project path="vendor/broadcom/wingray" name="android_vendor_broadcom_wingray" remote="schischu" revision="android-4.3" />
+  <project path="vendor/moto/wingray" name="android_vendor_moto_wingray" remote="schischu" revision="android-4.3" />
+  <project path="vendor/moto/stingray" name="android_vendor_moto_stingray" remote="schischu" revision="android-4.4" />
+  <project path="vendor/moto/stingray_cdma" name="android_vendor_moto_stingray" remote="schischu" revision="android-4.4" />
+  <project path="vendor/moto/everest" name="android_vendor_moto_everest" remote="schischu" revision="android-4.4" />
+  <project path="vendor/nvidia/wingray" name="android_vendor_nvidia_wingray" remote="schischu" revision="android-4.3" />
 
 </manifest>
