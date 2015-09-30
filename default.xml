@@ -36,11 +36,13 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="org/android" name="android" remote="omnirom" revision="android-5.1" />
-  <project path="android" name="android" remote="schischu" revision="android-5.1" />
+  <project path=".org/android" name="android" remote="omnirom" revision="android-5.1" />
+  <project path="android" name="android" remote="schischu" revision="android-5.1" >
+    <copyfile src="build.sh" dest="build.sh" />
+  </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="android_art" remote="omnirom" revision="android-5.1" groups="pdk" />
-  <project path="org/bionic" name="android_bionic" remote="omnirom" revision="android-5.1" groups="pdk" />
+  <project path=".org/bionic" name="android_bionic" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="bionic" name="android_bionic" remote="aaccount" revision="android-5.1" groups="pdk" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs"/>
   <project path="dalvik" name="android_dalvik" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs" />
@@ -289,9 +291,9 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
-  <project path="org/frameworks/av" name="android_frameworks_av" remote="omnirom" revision="android-5.1" groups="pdk" />
+  <project path=".org/frameworks/av" name="android_frameworks_av" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="frameworks/av" name="android_frameworks_av" remote="aaccount" revision="android-5.1" groups="pdk" />
-  <project path="org/frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs" />
+  <project path=".org/frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs" />
   <project path="frameworks/base" name="android_frameworks_base" remote="aaccount" revision="android-5.1" groups="pdk-cw-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
@@ -301,7 +303,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" />
-  <project path="org/frameworks/native" name="android_frameworks_native" remote="omnirom" revision="android-5.1" groups="pdk" />
+  <project path=".org/frameworks/native" name="android_frameworks_native" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="frameworks/native" name="android_frameworks_native" remote="aaccount" revision="android-5.1" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs" />
@@ -332,9 +334,9 @@
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="omnirom" revision="android-5.1" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-  <project path="org/hardware/libhardware" name="android_hardware_libhardware" remote="omnirom" revision="android-5.1" groups="pdk" />
+  <project path=".org/hardware/libhardware" name="android_hardware_libhardware" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="aaccount" revision="android-5.1" groups="pdk" />
-  <project path="org/hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="omnirom" revision="android-5.1" groups="pdk" />
+  <project path=".org/hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="aaccount" revision="android-5.1" groups="pdk" />
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
   <project path="hardware/nvidia/tegra124" name="platform/hardware/nvidia/tegra124" groups="tegra124" />
@@ -439,7 +441,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
-  <project path="org/system/core" name="android_system_core" remote="omnirom" revision="android-5.1" groups="pdk" />
+  <project path=".org/system/core" name="android_system_core" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="system/core" name="android_system_core" remote="schischu" revision="android-5.1" groups="pdk" />
   <project path="system/extras" name="android_system_extras" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
