@@ -42,7 +42,8 @@
   <project path="art" name="android_art" remote="omnirom" revision="android-5.1" groups="pdk" />
 
   <project path=".org/bionic" name="android_bionic" remote="omnirom" revision="android-5.1" groups="pdk" />
-  <project path="bionic" name="android_bionic" remote="aaccount" revision="android-5.1" groups="pdk" />
+  <project path=".org/bionic_aaccount" name="android_bionic" remote="aaccount" revision="android-5.1" groups="pdk" />
+  <project path="bionic" name="omni_android_bionic" remote="schischu" revision="android-5.1" groups="pdk" />
 
   <project path=".org/bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs"/>
   <project path="bootable/recovery_schischu" name="omni_android_bootable_recovery" remote="schischu" revision="android-5.1" groups="pdk-cw-fs"/>
@@ -303,7 +304,8 @@
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
 
   <project path=".org/frameworks/av" name="android_frameworks_av" remote="omnirom" revision="android-5.1" groups="pdk" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="aaccount" revision="android-5.1" groups="pdk" />
+  <project path=".org/frameworks/av_aaccount" name="android_frameworks_av" remote="aaccount" revision="android-5.1" groups="pdk" />
+  <project path="frameworks/av" name="omni_android_frameworks_av" remote="schischu" revision="android-5.1" groups="pdk" />
 
   <project path=".org/frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs" />
   <project path=".org/frameworks/base_aacount" name="android_frameworks_base" remote="aaccount" revision="android-5.1" groups="pdk-cw-fs" />
@@ -360,7 +362,8 @@
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="schischu" revision="android-5.1" groups="pdk" />
 
   <project path=".org/hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="omnirom" revision="android-5.1" groups="pdk" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="aaccount" revision="android-5.1" groups="pdk" />
+  <project path=".org/hardware/libhardware_legacy_aaccount" name="android_hardware_libhardware_legacy" remote="aaccount" revision="android-5.1" groups="pdk" />
+  <project path="hardware/libhardware_legacy" name="omni_android_hardware_libhardware_legacy" remote="schischu" revision="android-5.1" groups="pdk" />
 
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
   <project path="hardware/nvidia/tegra124" name="platform/hardware/nvidia/tegra124" groups="tegra124" />
