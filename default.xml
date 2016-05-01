@@ -23,10 +23,6 @@
            review="gerrit.omnirom.org"
            fetch="https://github.com/AAccount" />
 
-  <remote  name="koush"
-           review="gerrit.omnirom.org"
-           fetch="https://github.com/koush" />
-
   <default revision="refs/tags/android-5.1.1_r12"
            remote="aosp"
            sync-c="true"
@@ -41,12 +37,16 @@
   <project path="android" name="android" remote="schischu" revision="android-5.1" >
     <copyfile src="build.sh" dest="build.sh" />
   </project>
+
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="android_art" remote="omnirom" revision="android-5.1" groups="pdk" />
+
   <project path=".org/bionic" name="android_bionic" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="bionic" name="android_bionic" remote="aaccount" revision="android-5.1" groups="pdk" />
+
   <project path=".org/bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs"/>
   <project path="bootable/recovery" name="omni_android_bootable_recovery" remote="schischu" revision="android-5.1" groups="pdk-cw-fs"/>
+
   <project path="dalvik" name="android_dalvik" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs" />
   <project path="developers/build" name="platform/developers/build" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
@@ -58,11 +58,18 @@
   <project path="device/sample" name="device/sample" groups="pdk" />
 
   <project path="device/moto/wingray" name="android_device_moto_wingray" remote="schischu" revision="android-5.1" />
-  <project path="device/moto/stingray" name="android_device_moto_stingray" remote="schischu" revision="android-4.4" />
-  <project path="device/moto/stingray_cdma" name="android_device_moto_stingray_cdma" remote="schischu" revision="android-4.4" />
-  <project path="device/moto/everest" name="android_device_moto_everest" remote="schischu" revision="android-4.4" />
+  <!-- project path="device/moto/stingray" name="android_device_moto_stingray" remote="schischu" revision="android-4.4" /-->
+  <!-- project path="device/moto/stingray_cdma" name="android_device_moto_stingray_cdma" remote="schischu" revision="android-4.4" /-->
+  <!-- project path="device/moto/everest" name="android_device_moto_everest" remote="schischu" revision="android-4.4" /-->
 
   <project path="kernel/moto/stingray-kernel" name="xoom-ElementalX" remote="schischu" revision="master" />
+
+  <project path="vendor/broadcom/wingray" name="android_vendor_broadcom_wingray" remote="schischu" revision="android-5.1" />
+  <project path="vendor/moto/wingray" name="android_vendor_moto_wingray" remote="schischu" revision="android-4.3" />
+  <!-- project path="vendor/moto/stingray" name="android_vendor_moto_stingray" remote="schischu" revision="android-4.4" /-->
+  <!-- project path="vendor/moto/stingray_cdma" name="android_vendor_moto_stingray" remote="schischu" revision="android-4.4" /-->
+  <!-- project path="vendor/moto/everest" name="android_vendor_moto_everest" remote="schischu" revision="android-4.4" /-->
+  <project path="vendor/nvidia/wingray" name="android_vendor_nvidia_wingray" remote="schischu" revision="android-5.1" />
 
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
@@ -293,11 +300,14 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
+
   <project path=".org/frameworks/av" name="android_frameworks_av" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="frameworks/av" name="android_frameworks_av" remote="aaccount" revision="android-5.1" groups="pdk" />
+
   <project path=".org/frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs" />
   <project path=".org/frameworks/base_aacount" name="android_frameworks_base" remote="aaccount" revision="android-5.1" groups="pdk-cw-fs" />
   <project path="frameworks/base" name="omni_android_frameworks_base" remote="schischu" revision="android-5.1" groups="pdk-cw-fs" />
+
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -306,9 +316,11 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" />
+
   <project path=".org/frameworks/native" name="android_frameworks_native" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path=".org/frameworks/native_aaccount" name="android_frameworks_native" remote="aaccount" revision="android-5.1" groups="pdk" />
   <project path="frameworks/native" name="omni_android_frameworks_native" remote="schischu" revision="android-5.1" groups="pdk" />
+
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs" />
@@ -321,8 +333,10 @@
   <project path="frameworks/opt/mms" name="android_frameworks_opt_mms" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs" />
   <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs" />
   <project path="frameworks/opt/net/voip" name="android_frameworks_opt_net_voip" remote="omnirom" revision="android-5.1" />
+
   <project path=".org/frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="omnirom" revision="android-5.1" />
   <project path="frameworks/opt/net/wifi" name="omni_android_frameworks_opt_net_wifi" remote="schischu" revision="android-5.1" />
+
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs" />
@@ -339,16 +353,23 @@
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="omnirom" revision="android-5.1" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
+
   <project path=".org/hardware/libhardware" name="android_hardware_libhardware" remote="omnirom" revision="android-5.1" groups="pdk" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="aaccount" revision="android-5.1" groups="pdk" />
+  <project path=".org/hardware/libhardware_aaccount" name="android_hardware_libhardware" remote="aaccount" revision="android-5.1" groups="pdk" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="schischu" revision="android-5.1" groups="pdk" />
+
   <project path=".org/hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="aaccount" revision="android-5.1" groups="pdk" />
+
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
   <project path="hardware/nvidia/tegra124" name="platform/hardware/nvidia/tegra124" groups="tegra124" />
   <project path="hardware/ril" name="android_hardware_ril" remote="omnirom" revision="android-5.1" />
+
   <project path="libcore" name="android_libcore" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
+
   <project path="ndk" name="platform/ndk" />
+
   <project path="packages/apps/Apollo" name="android_packages_apps_Apollo" remote="omnirom" revision="android-5.1" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs" />
@@ -376,8 +397,10 @@
   <project path="packages/apps/Mms" name="android_packages_apps_Mms" remote="omnirom" revision="android-5.1" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="omnirom" revision="android-5.1" />
+
   <project path="packages/apps/OmniGears" name="android_packages_apps_OmniGears" remote="omnirom" revision="android-5.1" />
   <!-- project path="packages/apps/OmniGears" name="android_packages_apps_OmniGears" remote="aaccount" revision="android-5.1" /-->
+
   <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="omnirom" revision="android-5.1" />
   <project path="packages/apps/OmniTorch" name="android_packages_apps_OmniTorch" remote="omnirom" revision="android-5.1" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" />
@@ -387,8 +410,10 @@
   <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="android_packages_apps_QuickSearchBox" remote="omnirom" revision="android-5.1" />
+
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="omnirom" revision="android-5.1" />
   <!-- project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="aaccount" revision="android-5.1" /-->
+
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -425,7 +450,9 @@
   <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" />
   <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" />
   <project path="packages/wallpapers/PhaseBeam" name="android_packages_wallpapers_PhaseBeam" remote="omnirom" revision="android-5.1" />
+
   <project path="pdk" name="platform/pdk" groups="pdk" />
+
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" clone-depth="1" />
   <project path="prebuilts/clang/linux-x86/3.1" name="platform/prebuilts/clang/linux-x86/3.1" groups="pdk,linux" />
   <project path="prebuilts/clang/linux-x86/3.2" name="platform/prebuilts/clang/linux-x86/3.2" groups="pdk,linux" />
@@ -448,8 +475,10 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
+
   <project path=".org/system/core" name="android_system_core" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="system/core" name="omni_android_system_core" remote="schischu" revision="android-5.1" groups="pdk" />
+
   <project path="system/extras" name="android_system_extras" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="android_system_media" groups="pdk" remote="omnirom" revision="android-5.1" />
@@ -466,15 +495,10 @@
   <project path="tools/loganalysis" name="platform/tools/loganalysis" groups="notdefault,tradefed" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+
   <project path=".org/vendor/omni" name="android_vendor_omni" remote="omnirom" revision="android-5.1" />
   <project path="vendor/omni" name="omni_android_vendor_omni" remote="schischu" revision="android-5.1" />
-  <project path="packages/apps/MonthCalendarWidget" name="android_packages_apps_MonthCalendarWidget" remote="omnirom" revision="android-5.1" />
 
-  <project path="vendor/broadcom/wingray" name="android_vendor_broadcom_wingray" remote="schischu" revision="android-5.1" />
-  <project path="vendor/moto/wingray" name="android_vendor_moto_wingray" remote="schischu" revision="android-4.3" />
-  <project path="vendor/moto/stingray" name="android_vendor_moto_stingray" remote="schischu" revision="android-4.4" />
-  <project path="vendor/moto/stingray_cdma" name="android_vendor_moto_stingray" remote="schischu" revision="android-4.4" />
-  <project path="vendor/moto/everest" name="android_vendor_moto_everest" remote="schischu" revision="android-4.4" />
-  <project path="vendor/nvidia/wingray" name="android_vendor_nvidia_wingray" remote="schischu" revision="android-5.1" />
+  <project path="packages/apps/MonthCalendarWidget" name="android_packages_apps_MonthCalendarWidget" remote="omnirom" revision="android-5.1" />
 
 </manifest>
