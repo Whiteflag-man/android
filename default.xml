@@ -23,7 +23,7 @@
            review="gerrit.omnirom.org"
            fetch="https://github.com/AAccount" />
 
-  <default revision="refs/tags/android-5.1.1_r12"
+  <default revision="refs/tags/android-5.1.1_r28"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
@@ -45,7 +45,8 @@
   <project path="bionic" name="android_bionic" remote="aaccount" revision="android-5.1" groups="pdk" />
 
   <project path=".org/bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs"/>
-  <project path="bootable/recovery" name="omni_android_bootable_recovery" remote="schischu" revision="android-5.1" groups="pdk-cw-fs"/>
+  <project path="bootable/recovery_schischu" name="omni_android_bootable_recovery" remote="schischu" revision="android-5.1" groups="pdk-cw-fs"/>
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-6.0" groups="pdk-cw-fs"/>
 
   <project path="dalvik" name="android_dalvik" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs" />
   <project path="developers/build" name="platform/developers/build" />
