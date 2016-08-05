@@ -9,5 +9,5 @@ prebuilts/misc/linux-x86/ccache/ccache -M 120G
 mkdir -p prebuilts/qemu-kernel/arm
 touch prebuilts/qemu-kernel/arm/LINUX_KERNEL_COPYING
 source build/envsetup.sh
-lunch 8
+lunch aosp_wingray-userdebug
 make -j16 otapackage
