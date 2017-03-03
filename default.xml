@@ -45,10 +45,7 @@
   <project path=".org/bionic_aaccount" name="android_bionic" remote="aaccount" revision="android-5.1" groups="pdk" />
   <project path="bionic" name="omni_android_bionic" remote="schischu" revision="android-5.1" groups="pdk" />
 
-  <project path=".org/bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs"/>
-  <project path=".org/bootable/recovery_6_0" name="android_bootable_recovery" remote="omnirom" revision="android-6.0" groups="pdk-cw-fs"/>
-  <project path=".org/bootable/recovery_schischu" name="omni_android_bootable_recovery" remote="schischu" revision="android-5.1" groups="pdk-cw-fs"/>
-  <project path="bootable/recovery" name="omni_android_bootable_recovery" remote="schischu" revision="android-6.0" groups="pdk-cw-fs"/>
+  <project path="bootable/recovery" name="omni_android_bootable_recovery" remote="schischu" revision="android-5.1" groups="pdk-cw-fs"/>
 
   <project path="dalvik" name="android_dalvik" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs" />
   <project path="developers/build" name="platform/developers/build" />
