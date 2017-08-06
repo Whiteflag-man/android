@@ -3,7 +3,6 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
-
   <remote  name="github"
            fetch="https://github.com/" />
 
@@ -11,8 +10,10 @@
            remote="aosp"
            sync-j="4" />
 
+  <project path=".org/build" name="platform/build" groups="pdk" >
   <project path="build" name="Schischu/aosp_android_build" groups="pdk" remote="github" revision="android-6.0.1_r17_stingray" />
     <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
 
   <project path=".org/art" name="platform/art" groups="pdk" />
@@ -35,7 +36,7 @@
   <project path="device/samsung/p4-common" name="Decatf/android_device_samsung_p4-common" groups="pdk" remote="github" revision="aosp-6.0" />
   <project path="device/samsung/p4wifi" name="Decatf/android_device_samsung_p4wifi" groups="pdk" remote="github" revision="aosp-marshmallow" />
 
-  <project path="device/moto/wingray" name="Schischu/android_device_moto_wingray" groups="pdk" remote="github" revision="marshmallow-release" />
+  <project path="device/moto/wingray" name="Schischu/android_device_moto_wingray" groups="pdk" remote="github" revision="android-6.0" />
   <project path="kernel/moto/stingray-kernel" name="Schischu/xoom-ElementalX" groups="pdk" remote="github" revision="master" />
 
   <project path="vendor/broadcom/wingray" name="Schischu/android_vendor_broadcom_wingray" groups="pdk" remote="github" revision="android-6.0" />
