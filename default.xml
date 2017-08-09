@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  
+  <remote  name="Manuellama"
+fetch="https://github.com/Manuellama" />
   <remote  name="aosp"
            fetch=".." />
   <default revision="refs/tags/android-4.4.4_r2.0.1"
@@ -56,7 +59,7 @@
   <project path="external/arduino" name="platform/external/arduino" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" />
   <project path="external/blktrace" name="platform/external/blktrace" />
-  <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" />
+  <project path="external/bluetooth/bluedroid" name="android_external_bluetooth_bluedroid" remote="Manuellama" revision="android-4.4" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
@@ -239,8 +242,8 @@
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="platform/frameworks/base" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="Manuellama" revision="android-4.4" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="Manuellama" revision="android-4.4" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -273,7 +276,7 @@
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="Manuellama" revision="android-4.4" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
@@ -285,7 +288,7 @@
   <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom" />
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" />
-  <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="Manuellama" revision="android-4.4" />
   <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" groups="exynos5" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
@@ -430,4 +433,22 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+  
+    <project path="device/moto/wingray" name="android_device_moto_wingray" remote="Manuellama" revision="android-4.4" />
+  <project path="device/moto/stingray" name="android_device_moto_stingray" remote="Manuellama" revision="android-4.4" />
+  <project path="device/moto/stingray_cdma" name="android_device_moto_stingray_cdma" remote="Manuellama" revision="android-4.4" />
+  <project path="device/moto/everest" name="android_device_moto_everest" remote="Manuellama" revision="android-4.4" />
+  <!--project path="device/moto/stingray-kernel" name="android_kernel_moto_wingray" remote="schischu" revision="jb-mr2" /-->
+  <project path="device/moto/stingray-kernel" name="xoom-ElementalX" remote="Manuellama" revision="master" />
+
+   <project path="vendor/broadcom/wingray" name="android_vendor_broadcom_wingray" remote="Manuellama" revision="android-4.3" />
+  <project path="vendor/moto/wingray" name="android_vendor_moto_wingray" remote="Manuellama" revision="android-4.3" />
+  <project path="vendor/moto/stingray" name="android_vendor_moto_stingray" remote="Manuellama" revision="android-4.4" />
+  <project path="vendor/moto/stingray_cdma" name="android_vendor_moto_stingray" remote="Manuellama" revision="android-4.4" />
+  <project path="vendor/moto/everest" name="android_vendor_moto_everest" remote="Manuellama" revision="android-4.4" />
+  <project path="vendor/nvidia/wingray" name="android_vendor_nvidia_wingray" remote="Manuellama" revision="android-4.3" />
+  <project path="vendor/omni" name="android_vendor_omni" remote="Manuellama" revision="android-4.4" />
+
+  
+  
 </manifest>
