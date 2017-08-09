@@ -3,8 +3,10 @@
   
   <remote  name="Manuellama"
 fetch="https://github.com/Manuellama" />
-  <remote  name="aosp"
-           fetch=".." />
+   <remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com" />
+
   <default revision="refs/tags/android-4.4.4_r2.0.1"
            remote="aosp"
            sync-j="4" />
