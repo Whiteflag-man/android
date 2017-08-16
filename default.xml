@@ -403,4 +403,15 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+  
+  
+    <project path="vendor/broadcom/wingray" name="android_vendor_broadcom_wingray" remote="Manuellama" revision="android-4.3" />
+   <project path="vendor/moto/wingray" name="android_vendor_moto_wingray" remote="Manuellama" revision="android-4.3" />
+   <project path="vendor/moto/stingray" name="android_vendor_moto_stingray" remote="Manuellama" revision="android-4.4" />
+   <project path="vendor/moto/stingray_cdma" name="android_vendor_moto_stingray" remote="Manuellama" revision="android-4.4" />
+   <project path="vendor/moto/everest" name="android_vendor_moto_everest" remote="Manuellama" revision="android-4.4" />
+   <project path="vendor/nvidia/wingray" name="android_vendor_nvidia_wingray" remote="Manuellama" revision="android-4.3" />
+  <project path="kernel/moto/stingray-kernel" name="xoom-ElementalX" remote="Manuellama" revision="master" />
+
+  
 </manifest>
