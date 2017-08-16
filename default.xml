@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  
-  <remote  name="Manuellama"
-fetch="https://github.com/Manuellama" />
-   <remote  name="aosp"
-           fetch="https://android.googlesource.com"
-           review="android-review.googlesource.com" />
-
-  <default revision="refs/tags/android-4.4.4_r2.0.1"
+  <remote  name="aosp"
+           fetch=".." />
+  <default revision="refs/tags/android-4.4.2_r2.0.1"
            remote="aosp"
            sync-j="4" />
   <project path="build" name="platform/build" groups="pdk" >
@@ -26,28 +21,6 @@ fetch="https://github.com/Manuellama" />
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
   <project path="development" name="platform/development" />
-  <project path="device/asus/deb" name="device/asus/deb" groups="device,flo" />
-  <project path="device/asus/flo" name="device/asus/flo" groups="device,flo" />
-  <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" />
-  <project path="device/asus/grouper" name="device/asus/grouper" groups="device,grouper" />
-  <project path="device/asus/tilapia" name="device/asus/tilapia" groups="device,grouper" />
-  <project path="device/common" name="device/common" />
-  <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
-  <project path="device/generic/common" name="device/generic/common" groups="pdk" />
-  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
-  <project path="device/generic/mips" name="device/generic/mips" groups="pdk" />
-  <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" />
-  <project path="device/generic/mini-emulator-mips" name="device/generic/mini-emulator-mips" groups="pdk" />
-  <project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk" />
-  <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
-  <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
-  <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/lge/hammerhead" name="device/lge/hammerhead" groups="device,hammerhead" />
-  <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" />
-  <project path="device/lge/mako" name="device/lge/mako" groups="device,mako" />
-  <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" />
-  <project path="device/sample" name="device/sample" groups="pdk" />
-  <project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" />
@@ -61,7 +34,7 @@ fetch="https://github.com/Manuellama" />
   <project path="external/arduino" name="platform/external/arduino" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" />
   <project path="external/blktrace" name="platform/external/blktrace" />
-  <project path="external/bluetooth/bluedroid" name="android_external_bluetooth_bluedroid" remote="Manuellama" revision="android-4.4" />
+  <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
@@ -74,7 +47,7 @@ fetch="https://github.com/Manuellama" />
   <project path="external/chromium_org/sdch/open-vcdiff" name="platform/external/chromium_org/sdch/open-vcdiff" />
   <project path="external/chromium_org/testing/gtest" name="platform/external/chromium_org/testing/gtest" />
   <project path="external/chromium_org/third_party/WebKit" name="platform/external/chromium_org/third_party/WebKit" />
-  <project path="external/chromium_org/third_party/angle" name="platform/external/chromium_org/third_party/angle" />
+  <project path="external/chromium_org/third_party/angle_dx11" name="platform/external/chromium_org/third_party/angle_dx11" />
   <project path="external/chromium_org/third_party/eyesfree/src/android/java/src/com/googlecode/eyesfree/braille" name="platform/external/chromium_org/third_party/eyesfree/src/android/java/src/com/googlecode/eyesfree/braille" />
   <project path="external/chromium_org/third_party/freetype" name="platform/external/chromium_org/third_party/freetype" />
   <project path="external/chromium_org/third_party/icu" name="platform/external/chromium_org/third_party/icu" />
@@ -86,7 +59,6 @@ fetch="https://github.com/Manuellama" />
   <project path="external/chromium_org/third_party/openssl" name="platform/external/chromium_org/third_party/openssl" />
   <project path="external/chromium_org/third_party/opus/src" name="platform/external/chromium_org/third_party/opus/src" />
   <project path="external/chromium_org/third_party/ots" name="platform/external/chromium_org/third_party/ots" />
-  <project path="external/chromium_org/third_party/sfntly/cpp/src" name="platform/external/chromium_org/third_party/sfntly/cpp/src" />
   <project path="external/chromium_org/third_party/skia/gyp" name="platform/external/chromium_org/third_party/skia/gyp" />
   <project path="external/chromium_org/third_party/skia/include" name="platform/external/chromium_org/third_party/skia/include" />
   <project path="external/chromium_org/third_party/skia/src" name="platform/external/chromium_org/third_party/skia/src" />
@@ -148,7 +120,6 @@ fetch="https://github.com/Manuellama" />
   <project path="external/junit" name="platform/external/junit" />
   <project path="external/kernel-headers" name="platform/external/kernel-headers" />
   <project path="external/libcap-ng" name="platform/external/libcap-ng" />
-  <project path="external/libexif" name="platform/external/libexif" />
   <project path="external/libffi" name="platform/external/libffi" />
   <project path="external/libgsm" name="platform/external/libgsm" groups="pdk" />
   <project path="external/liblzf" name="platform/external/liblzf" groups="pdk" />
@@ -163,7 +134,6 @@ fetch="https://github.com/Manuellama" />
   <project path="external/libppp" name="platform/external/libppp" />
   <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
   <project path="external/libsepol" name="platform/external/libsepol" groups="pdk" />
-  <project path="external/libssh2" name="platform/external/libssh2" />
   <project path="external/libusb" name="platform/external/libusb" />
   <project path="external/libusb-compat" name="platform/external/libusb-compat" />
   <project path="external/libvorbis" name="platform/external/libvorbis" />
@@ -244,8 +214,8 @@ fetch="https://github.com/Manuellama" />
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="Manuellama" revision="android-4.4" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="Manuellama" revision="android-4.4" />
+  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
+  <project path="frameworks/base" name="platform/frameworks/base" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -266,10 +236,10 @@ fetch="https://github.com/Manuellama" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" />
   <project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" />
-  <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
   <project path="frameworks/support" name="platform/frameworks/support" />
   <project path="frameworks/testing" name="platform/frameworks/testing" />
+  <project path="frameworks/uiautomator" name="platform/frameworks/uiautomator" />
   <project path="frameworks/volley" name="platform/frameworks/volley" />
   <project path="frameworks/webview" name="platform/frameworks/webview" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" />
@@ -278,7 +248,7 @@ fetch="https://github.com/Manuellama" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="Manuellama" revision="android-4.4" />
+  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
@@ -290,7 +260,7 @@ fetch="https://github.com/Manuellama" />
   <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom" />
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" />
-  <project path="hardware/ril" name="android_hardware_ril" remote="Manuellama" revision="android-4.4" />
+  <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
   <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" groups="exynos5" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
@@ -407,8 +377,6 @@ fetch="https://github.com/Manuellama" />
   <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" name="platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" groups="pdk,linux,x86" />
   <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" name="platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" groups="pdk,linux,x86" />
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.7" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.7" groups="pdk,linux,x86" />
-  <project path="prebuilts/gradle-plugin" name="platform/prebuilts/gradle-plugin" />
-  <project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" />
   <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk" />
   <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" />
   <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin" />
@@ -435,22 +403,4 @@ fetch="https://github.com/Manuellama" />
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
-  
-    <project path="device/moto/wingray" name="android_device_moto_wingray" remote="Manuellama" revision="android-4.4" />
-  <project path="device/moto/stingray" name="android_device_moto_stingray" remote="Manuellama" revision="android-4.4" />
-  <project path="device/moto/stingray_cdma" name="android_device_moto_stingray_cdma" remote="Manuellama" revision="android-4.4" />
-  <project path="device/moto/everest" name="android_device_moto_everest" remote="Manuellama" revision="android-4.4" />
-  <!--project path="device/moto/stingray-kernel" name="android_kernel_moto_wingray" remote="schischu" revision="jb-mr2" /-->
-  <project path="device/moto/stingray-kernel" name="xoom-ElementalX" remote="Manuellama" revision="master" />
-
-   <project path="vendor/broadcom/wingray" name="android_vendor_broadcom_wingray" remote="Manuellama" revision="android-4.3" />
-  <project path="vendor/moto/wingray" name="android_vendor_moto_wingray" remote="Manuellama" revision="android-4.3" />
-  <project path="vendor/moto/stingray" name="android_vendor_moto_stingray" remote="Manuellama" revision="android-4.4" />
-  <project path="vendor/moto/stingray_cdma" name="android_vendor_moto_stingray" remote="Manuellama" revision="android-4.4" />
-  <project path="vendor/moto/everest" name="android_vendor_moto_everest" remote="Manuellama" revision="android-4.4" />
-  <project path="vendor/nvidia/wingray" name="android_vendor_nvidia_wingray" remote="Manuellama" revision="android-4.3" />
-  <project path="vendor/omni" name="android_vendor_omni" remote="Manuellama" revision="android-4.4" />
-
-  
-  
 </manifest>
