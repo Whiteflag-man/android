@@ -407,7 +407,7 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   
-  
+   <project path="device/moto/wingray" name="android_device_moto_wingray" remote="Manuellama" revision="android-4.4" />
     <project path="vendor/broadcom/wingray" name="android_vendor_broadcom_wingray" remote="Manuellama" revision="android-4.3" />
    <project path="vendor/moto/wingray" name="android_vendor_moto_wingray" remote="Manuellama" revision="android-4.3" />
    <project path="vendor/moto/stingray" name="android_vendor_moto_stingray" remote="Manuellama" revision="android-4.4" />
