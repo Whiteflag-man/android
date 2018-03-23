@@ -9,11 +9,11 @@
   <default revision="refs/tags/android-6.0.1_r17"
            remote="aosp"
            sync-j="4" />
-
-  <project path="build" name="Schischu/aosp_android_build" groups="pdk" remote="github" revision="android-6.0.1_r17_stingray" />
-  <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
+  
   <project path=".org/build" name="platform/build" groups="pdk" >
+  <project path="build" name="Schischu/aosp_android_build" groups="pdk" remote="github" revision="android-6.0.1_r17_stingray" />
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
 
   <project path=".org/art" name="platform/art" groups="pdk" />
