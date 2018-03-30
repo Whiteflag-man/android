@@ -7,7 +7,7 @@
   <remote  name="github"
            fetch="https://github.com/" />
 
-  <default revision="refs/tags/android-7.1.0_r7"
+  <default revision="refs/tags/android-7.1.2_r36"
            remote="aosp"
            sync-j="4" />
 
@@ -20,7 +20,7 @@
   <project path="art" name="Decatf/android_art" groups="pdk" remote="github" revision="aosp-6.0" />
 
   <project path=".org/bionic" name="platform/bionic" groups="pdk" />
-  <project path=".org/decatf_bionic" name="Decatf/platform_bionic" groups="pdk" remote="github" revision="aosp-6.0" />
+  <project path=".org/decatf_bionic" name="Decatf/platform_bionic" groups="pdk" remote="github" revision="aosp-7.1-dev" />
   <project path="bionic" name="Schischu/aosp_android_bionic" groups="pdk" remote="github" revision="android-6.0.1_r17_stingray" />
 
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
@@ -32,8 +32,8 @@
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
   <project path="device/sample" name="device/sample" groups="pdk" />
 
-  <project path="device/samsung/p4-common" name="Decatf/android_device_samsung_p4-common" groups="pdk" remote="github" revision="aosp-6.0" />
-  <project path="device/samsung/p4wifi" name="Decatf/android_device_samsung_p4wifi" groups="pdk" remote="github" revision="aosp-marshmallow" />
+  <project path="device/samsung/p4-common" name="Decatf/android_device_samsung_p4-common" groups="pdk" remote="github" revision="aosp-7.1" />
+  <project path="device/samsung/p4wifi" name="Decatf/android_device_samsung_p4wifi" groups="pdk" remote="github" revision="aosp-nougat" />
 
   <project path="device/moto/wingray" name="Schischu/android_device_moto_wingray" groups="pdk" remote="github" revision="marshmallow-release" />
   <project path="kernel/moto/stingray-kernel" name="Schischu/xoom-ElementalX" groups="pdk" remote="github" revision="master" />
@@ -273,7 +273,7 @@
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
 
   <project path=".org/frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" />
-  <project path=".org/frameworks/decatf_base" name="Decatf/platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-6.0" />
+  <project path=".org/frameworks/decatf_base" name="Decatf/platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-7.1-dev" />
   <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" />
 
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
@@ -290,7 +290,7 @@
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
 
   <project path=".org/frameworks/native" name="platform/frameworks/native" groups="pdk" />
-  <project path=".org/frameworks/decatf_native" name="Decatf/platform_frameworks_native" groups="pdk" remote="github" revision="aosp-6.0" />
+  <project path=".org/frameworks/decatf_native" name="Decatf/platform_frameworks_native" groups="pdk" remote="github" revision="aosp-7.1-dev" />
   <project path="frameworks/native" name="Schischu/aosp_android_frameworks_native" groups="pdk" remote="github" revision="android-6.0.1_r17_stingray" />
 
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
@@ -335,7 +335,7 @@
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
 
   <project path=".org/hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
-  <project path=".org/hardware/decatf_libhardware_legacy" name="Decatf/platform_hardware_libhardware_legacy" groups="pdk" remote="github" revision="aosp-6.0" />
+  <project path=".org/hardware/decatf_libhardware_legacy" name="Decatf/platform_hardware_libhardware_legacy" groups="pdk" remote="github" revision="aosp-7.1" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
 
   <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt" />
@@ -463,7 +463,7 @@
   <project path="system/bt" name="platform/system/bt" groups="pdk" />
 
   <project path=".org/system/core" name="platform/system/core" groups="pdk" />
-  <project path=".org/system/decatf_core" name="Decatf/platform_system_core" groups="pdk" remote="github" revision="aosp-6.0" />
+  <project path=".org/system/decatf_core" name="Decatf/platform_system_core" groups="pdk" remote="github" revision="aosp-7.1-dev" />
   <project path="system/core" name="Schischu/aosp_android_system_core" groups="pdk" remote="github" revision="android-6.0.1_r17_stingray" />
 
   <project path=".org/system/extras" name="platform/system/extras" groups="pdk" />
