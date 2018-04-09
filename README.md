@@ -1,2 +1,2 @@
 # android
-sudo ./build.sh wingray clean
+. /build.sh wingray clean
