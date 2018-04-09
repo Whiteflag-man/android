@@ -40,7 +40,7 @@
   <project path="kernel/moto/stingray-kernel" name="Schischu/xoom-ElementalX" groups="pdk" remote="github" revision="master" />
 
   <project path="vendor/broadcom/wingray" name="Schischu/android_vendor_broadcom_wingray" groups="pdk" remote="github" revision="android-6.0" />
-  <project path="vendor/moto/wingray" name="Schischu/android_vendor_moto_wingray" groups="pdk" remote="github" revision="marshmallow-release" />
+  <project path="vendor/moto/wingray" name="Schischu/android_vendor_moto_wingray" groups="pdk" remote="github" revision="android-6.0" />
   <!-- project path="vendor/moto/stingray" name="Schischu/android_vendor_moto_stingray" remote="github" revision="android-4.4" /-->
   <!-- project path="vendor/moto/stingray_cdma" name="Schischu/android_vendor_moto_stingray" remote="github" revision="android-4.4" /-->
   <!-- project path="vendor/moto/everest" name="Schischu/android_vendor_moto_everest" remote="github" revision="android-4.4" /-->
