@@ -12,4 +12,4 @@ manual Download Manuellama/aosp_android_build
 rename aosp_android_build  → Build
 
 sudo -s
-<br>. /build.sh wingray clean
+<br>lunch 8 or 9<br>make -j8
